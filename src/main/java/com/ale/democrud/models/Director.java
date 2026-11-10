@@ -11,14 +11,13 @@ public class Director {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
+ 
     private String nombre;
 
     private String nacionalidad;
 
-    // Relación Uno a Muchos: Un director puede dirigir muchas películas
     @OneToMany(mappedBy = "director", cascade = CascadeType.ALL)
-    @JsonIgnore // Evita ciclos infinitos cuando pruebes en Postman
+    @JsonIgnore 
     private List<Pelicula> peliculas;
 
     public Director() {
