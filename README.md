@@ -48,12 +48,6 @@ erDiagram
     }
 ```
 
-### Entidades relacionadas
-
-> **[Entidades relacionadas en PostgreSQL (tablas `directores` y `peliculas` con su llave foránea `director_id`) o modelos JPA]**
->
-> ![Entidades relacionadas](screenshots/01-entidades-relacionadas.png)
-
 ---
 
 ## Estructura del Proyecto
